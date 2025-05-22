@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frosty Delights - Ice Cream Shop</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Baskin-Robbins_logo.svg/1200px-Baskin-Robbins_logo.svg.png"
+          alt="Frosty Delights Logo">
+        Frosty Delights
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#flavors">Flavors</a></li>
+          <li><a href="#customize">Customize</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="cart-icon" id="cartIcon">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Discover 31+ Flavors of Happiness</h1>
+      <p>Indulge in our premium ice cream made with the finest ingredients and crafted with love</p>
+      <a href="#customize" class="btn">Create Your Own</a>
+    </div>
+  </section>
+
+  <!-- Flavors Section -->
+  <section class="flavors" id="flavors">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Signature Flavors</h2>
+        <p>Explore our delicious selection of premium ice cream flavors</p>
+      </div>
+      <div class="flavor-grid">
+        <!-- Flavor 1 -->
+        <div class="flavor-card">
+          <div class="flavor-img">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Chocolate Fudge">
+          </div>
+          <div class="flavor-info">
+            <h3>Chocolate Fudge</h3>
+            <p>Rich chocolate ice cream with swirls of fudge</p>
+            <div class="price">
+              <span>$4.99</span>
+              <a href="#order" class="btn small-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flavor 2 -->
+        <div class="flavor-card">
+          <div class="flavor-img">
+            <img
+              src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Strawberry Cheesecake">
+          </div>
+          <div class="flavor-info">
+            <h3>Strawberry Cheesecake</h3>
+            <p>Creamy cheesecake ice cream with strawberry swirls</p>
+            <div class="price">
+              <span>$5.49</span>
+              <a href="#order" class="btn small-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flavor 3 -->
+        <div class="flavor-card">
+          <div class="flavor-img">
+            <img
+              src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Mint Chocolate Chip">
+          </div>
+          <div class="flavor-info">
+            <h3>Mint Chocolate Chip</h3>
+            <p>Refreshing mint ice cream with chocolate chips</p>
+            <div class="price">
+              <span>$4.99</span>
+              <a href="#order" class="btn small-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flavor 4 -->
+        <div class="flavor-card">
+          <div class="flavor-img">
+            <img
+              src="https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+              alt="Cookies & Cream">
+          </div>
+          <div class="flavor-info">
+            <h3>Cookies & Cream</h3>
+            <p>Vanilla ice cream with chunks of chocolate cookies</p>
+            <div class="price">
+              <span>$5.29</span>
+              <a href="#order" class="btn small-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customize Section -->
+  <section class="customize" id="customize">
+    <div class="container">
+      <div class="section-title">
+        <h2>Create Your Own Masterpiece</h2>
+        <p>Mix and match to create your perfect ice cream combination</p>
+      </div>
+      <div class="customize-container">
+        <div class="customize-img">
+          <img
+            src="https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            alt="Custom Ice Cream">
+        </div>
+        <div class="customize-form">
+          <form id="customIceCreamForm" action="#order" method="get">
+            <div class="form-group">
+              <label for="baseFlavor">Base Flavor</label>
+              <select id="baseFlavor" required>
+                <option value="">Select a base flavor</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Mint">Mint</option>
+                <option value="Coffee">Coffee</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="size">Size</label>
+              <select id="size" required>
+                <option value="">Select size</option>
+                <option value="Single Scoop">Single Scoop ($3.99)</option>
+                <option value="Double Scoop">Double Scoop ($5.99)</option>
+                <option value="Triple Scoop">Triple Scoop ($7.99)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Toppings ($0.50 each)</label>
+              <div class="toppings">
+                <div class="topping-option">
+                  <input type="checkbox" id="sprinkles" name="toppings" value="Sprinkles">
+                  <label for="sprinkles">Sprinkles</label>
+                </div>
+                <div class="topping-option">
+                  <input type="checkbox" id="nuts" name="toppings" value="Chopped Nuts">
+                  <label for="nuts">Chopped Nuts</label>
+                </div>
+                <div class="topping-option">
+                  <input type="checkbox" id="chocolate-chips" name="toppings" value="Chocolate Chips">
+                  <label for="chocolate-chips">Chocolate Chips</label>
+                </div>
+                <div class="topping-option">
+                  <input type="checkbox" id="caramel" name="toppings" value="Caramel Sauce">
+                  <label for="caramel">Caramel Sauce</label>
+                </div>
+                <div class="topping-option">
+                  <input type="checkbox" id="whipped-cream" name="toppings" value="Whipped Cream">
+                  <label for="whipped-cream">Whipped Cream</label>
+                </div>
+                <div class="topping-option">
+                  <input type="checkbox" id="cherry" name="toppings" value="Cherry">
+                  <label for="cherry">Cherry</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Create Your Ice Cream</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Your Ice Cream Cart</h3>
+        <button class="close-modal" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body" id="cartItems">
+        <!-- Cart items will be added here dynamically -->
+        <p class="empty-cart-message">Your cart is empty</p>
+      </div>
+      <div class="modal-footer">
+        <div class="total-price">
+          Total: $<span id="cartTotal">0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Section -->
+  <section class="order" id="order">
+    <div class="container">
+      <div class="section-title">
+        <h2>Place Your Order</h2>
+        <p>Visit us or call to enjoy your favorite flavors</p>
+      </div>
+      <div class="order-container">
+        <div class="order-info">
+          <h3>Contact Information</h3>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> orders@frostydelights.com</p>
+          <p><strong>Address:</strong> 123 Ice Cream Lane, Sweetville</p>
+
+          <h3>Store Hours</h3>
+          <p>Monday-Friday: 11am - 10pm</p>
+          <p>Saturday-Sunday: 10am - 11pm</p>
+        </div>
+        <div class="order-img">
+          <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+            alt="Ice Cream Shop">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="locations" id="locations">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Locations</h2>
+        <p>Find a Frosty Delights near you</p>
+      </div>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Sweetville</h3>
+          <p>123 Ice Cream Lane</p>
+          <p>Open Daily 11am-10pm</p>
+          <a href="#order" class="btn small-btn">Order Here</a>
+        </div>
+        <div class="location-card">
+          <h3>Chocolatetown</h3>
+          <p>456 Dessert Avenue</p>
+          <p>Open Daily 11am-10pm</p>
+          <a href="#order" class="btn small-btn">Order Here</a>
+        </div>
+        <div class="location-card">
+          <h3>Berryville</h3>
+          <p>789 Fruit Street</p>
+          <p>Open Daily 11am-10pm</p>
+          <a href="#order" class="btn small-btn">Order Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Frosty Delights</h2>
+        <p>Our story of sweet beginnings</p>
+      </div>
+      <div class="about-content">
+        <p>Founded in 2023, Frosty Delights began with a simple mission: to create the most delicious, high-quality ice
+          cream using only the finest ingredients. Our founder, Sarah Creamer, started with just three flavors in her
+          home kitchen, and through dedication and passion, we've grown to offer over 31 flavors at multiple locations.
+        </p>
+        <p>We pride ourselves on our commitment to quality, creativity, and customer satisfaction. Every scoop is made
+          with love and care, ensuring you get the best ice cream experience possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Franchise Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#order">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Nutrition Information</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#locations">Store Locator</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Frosty Delights. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
