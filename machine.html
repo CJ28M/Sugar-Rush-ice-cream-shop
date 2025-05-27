@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/machine.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="body">body
+    <div class="mcontainer">mcontainer
+      <div class="top">top
+        <div class="display">display
+          <div class="left">left
+            <!-- Customize Section -->
+            <section class="customize" id="customize">
+              <div class="container">
+                <div class="section-title">
+                  <h2>Create Your Own Masterpiece</h2>
+                  <p>Mix and match to create your perfect ice cream combination</p>
+                </div>
+                <div class="customize-container">
+
+                  <div class="customize-form">
+                    <form id="customIceCreamForm" action="#order" method="get">
+                      <div class="form-group">
+                        <label for="baseFlavor">Base Flavor</label>
+                        <select id="baseFlavor" required>
+                          <option value="">Select a base flavor</option>
+                          <option value="Vanilla">Vanilla</option>
+                          <option value="Chocolate">Chocolate</option>
+                          <option value="Strawberry">Strawberry</option>
+                          <option value="Mint">Mint</option>
+                          <option value="Coffee">Coffee</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="size">Size</label>
+                        <select id="size" required>
+                          <option value="">Select size</option>
+                          <option value="Single Scoop">Single Scoop ($3.99)</option>
+                          <option value="Double Scoop">Double Scoop ($5.99)</option>
+                          <option value="Triple Scoop">Triple Scoop ($7.99)</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Toppings ($0.50 each)</label>
+                        <div class="toppings">
+                          <div class="topping-option">
+                            <input type="checkbox" id="sprinkles" name="toppings" value="Sprinkles">
+                            <label for="sprinkles">Sprinkles</label>
+                          </div>
+                          <div class="topping-option">
+                            <input type="checkbox" id="nuts" name="toppings" value="Chopped Nuts">
+                            <label for="nuts">Chopped Nuts</label>
+                          </div>
+                          <div class="topping-option">
+                            <input type="checkbox" id="chocolate-chips" name="toppings" value="Chocolate Chips">
+                            <label for="chocolate-chips">Chocolate Chips</label>
+                          </div>
+                          <div class="topping-option">
+                            <input type="checkbox" id="caramel" name="toppings" value="Caramel Sauce">
+                            <label for="caramel">Caramel Sauce</label>
+                          </div>
+                          <div class="topping-option">
+                            <input type="checkbox" id="whipped-cream" name="toppings" value="Whipped Cream">
+                            <label for="whipped-cream">Whipped Cream</label>
+                          </div>
+                          <div class="topping-option">
+                            <input type="checkbox" id="cherry" name="toppings" value="Cherry">
+                            <label for="cherry">Cherry</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn">Create Your Ice Cream</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="right">right
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="bottom">bottom
+        <div class="left">left
+
+        </div>
+        <div class="right"> right
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>

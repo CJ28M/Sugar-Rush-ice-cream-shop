@@ -1,0 +1,95 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #87ceeb; /* Sky blue */
+  overflow: hidden;
+}
+
+/* Store Building */
+.store-front {
+  position: relative;
+  width: 600px;
+  height: 500px;
+}
+
+.building {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-color: #ffd700; /* Gold */
+  bottom: 0;
+  left: 100px;
+  border-top: 20px solid #8b4513; /* Brown roof */
+}
+
+.awning {
+  position: absolute;
+  width: 450px;
+  height: 80px;
+  background-color: #ff6347; /* Tomato red */
+  top: -80px;
+  left: -25px;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.door {
+  position: absolute;
+  width: 80px;
+  height: 150px;
+  background-color: #add8e6; /* Brown */
+  bottom: 2px;
+  left: 160px;
+  border: 5px solid #ffffff;
+}
+
+.window {
+  position: absolute;
+  width: 90px;
+  height: 170px;
+  background-color: #add8e6; /* Light blue */
+  top: 110px;
+  border: 5px solid #8b4513;
+}
+
+.window.left {
+  left: 35px;
+}
+
+.window.right {
+  right: 35px;
+}
+
+.sign {
+  position: absolute;
+  width: 300px;
+  top: -120px;
+  left: 50px;
+  font-family: "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.chocolate {
+  background-color: #5c3317;
+}
+
+.vanilla {
+  background-color: #f5deb3;
+}
+
+.strawberry {
+  background-color: #ff69b4;
+}
+
+.mint {
+  background-color: #98ff98;
+}
